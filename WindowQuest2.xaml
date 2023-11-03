@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPF_Stas_PR5.WindowQuest2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Stas_PR5"
+        mc:Ignorable="d"
+        Title="WindowQuest2" Height="450" Width="800">
+    <Grid Background="DeepSkyBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Foreground="White" Text=" Menu: Load Case / Save / New Case" Height="30" FontWeight="Black" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="5" TextWrapping="Wrap" Background="Blue"/>
+        <TextBlock Width="150" Background="Blue" Margin="25,56,25,18"/>
+        <Frame x:Name="MyFrame" NavigationUIVisibility="Hidden" Grid.Column="1" Background="Blue" Margin="24,56,24,18"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Margin="25,56,25,18">
+            <Button x:Name="Case1" Content="Case 1" Foreground="White" FontWeight="Bold" Width="60" Background="Transparent" BorderBrush="Transparent" Margin="5" Click="Case1_Click"></Button>
+            <Button x:Name="Case2" Content="Case 2" Foreground="White" FontWeight="Bold" Width="60" Background="Transparent" BorderBrush="Transparent" Margin="5" Click="Case2_Click"></Button>
+            <Button x:Name="Case3" Content="Case 3" Foreground="White" FontWeight="Bold" Width="60" Background="Transparent" BorderBrush="Transparent" Margin="5" Click="Case3_Click"></Button>
+            <Button x:Name="Case4" Content="Case 4" Foreground="White" FontWeight="Bold" Width="60" Background="Transparent" BorderBrush="Transparent" Margin="5" Click="Case4_Click"></Button>
+            <Button x:Name="Case5" Content="Case 5" Foreground="White" FontWeight="Bold" Width="60" Background="Transparent" BorderBrush="Transparent" Margin="5" Click="Case5_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

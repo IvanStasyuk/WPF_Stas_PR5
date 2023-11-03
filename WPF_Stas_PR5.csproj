@@ -55,6 +55,45 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Case1.xaml.cs">
+      <DependentUpon>Case1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Case2.xaml.cs">
+      <DependentUpon>Case2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Case3.xaml.cs">
+      <DependentUpon>Case3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Case4.xaml.cs">
+      <DependentUpon>Case4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Case5.xaml.cs">
+      <DependentUpon>Case5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="WindowQuest2.xaml.cs">
+      <DependentUpon>WindowQuest2.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Case1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Case2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Case3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Case4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Case5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Page3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowQuest2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
