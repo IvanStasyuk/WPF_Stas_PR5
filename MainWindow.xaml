@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="325"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Frame Source="Page1.xaml" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="LimeGreen" Margin="5" BorderThickness="2"></Frame>
+        <Frame Source="Page2.xaml" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" Margin="5" BorderThickness="2"></Frame>
+        <Frame Source="Page3.xaml" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.Column="2" BorderBrush="Yellow" Margin="5" BorderThickness="2"></Frame>
+        <TextBlock TextWrapping="WrapWithOverflow" Grid.RowSpan="2" Background="Aqua" Margin="5">Это главное окно, а это
+            <Hyperlink NavigateUri="Page1.xaml">Ссылка на первую страницу</Hyperlink></TextBlock>
     </Grid>
 </Window>
