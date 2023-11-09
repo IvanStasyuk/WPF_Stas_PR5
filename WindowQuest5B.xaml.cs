@@ -23,5 +23,19 @@ namespace WPF_Stas_PR5
         {
             InitializeComponent();
         }
+
+        private void quest6_Click(object sender, RoutedEventArgs e)
+        {
+            WindowQuest6 window6 = new WindowQuest6();
+            window6.Show();
+            this.Close();
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            WindowQuest5 window5 = new WindowQuest5();
+            window5.Show();
+            this.Close();
+        }
     }
 }

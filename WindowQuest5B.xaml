@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="WindowQuest5B" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="quest6" Height="20" Width="80" Content="Задание 6" Click="quest6_Click" Grid.Column="0"></Button>
+        <Button x:Name="back" Height="20" Width="80" Content="Назад" Click="back_Click" Grid.Column="1"></Button>
     </Grid>
 </Window>
