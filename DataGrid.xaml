@@ -1,0 +1,24 @@
+﻿<Page x:Class="WPF_Stas_PR5.DataGrid"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Stas_PR5" xmlns:Col="clr-namespace:System.Collections;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="610"
+      Title="DataGrid">
+
+    <Grid>
+        <DataGrid x:Name="InformationGrid" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Место" Width="auto" Binding="{Binding Place}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Точка" Width="auto" Binding="{Binding Point}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Серийный номер" Width="auto" Binding="{Binding Serial_Number}"></DataGridTextColumn>
+                <DataGridTextColumn Header="IP адрес" Width="auto" Binding="{Binding IP_Address}"></DataGridTextColumn>
+                <DataGridTextColumn Header="MAC адрес" Width="auto" Binding="{Binding MAC_Address}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Состояние подключения" Width="auto" Binding="{Binding Connection_Status}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата и время Детектора" Width="auto" Binding="{Binding Date_and_time_Detector}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="WPF_Stas_PR5.WindowQuest6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Stas_PR5"
+        mc:Ignorable="d"
+        Title="WindowQuest6" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="Aquamarine"></Rectangle>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="5">
+            <Button x:Name="QuestHome" Background="Transparent" BorderBrush="Transparent" Click="QuestHome_Click">
+                <Image Source="House.png" Height="50" Margin="5"></Image>
+            </Button>
+            <Button x:Name="QuestSetter" Background="Transparent" BorderBrush="Transparent" Click="QuestSetter_Click">
+                <Image Source="Letter.png" Height="50" Margin="5"></Image>
+            </Button>
+            <Button x:Name="QuestCloud" Background="Transparent" BorderBrush="Transparent" Click="QuestCloud_Click">
+                <Image Source="Cloud.png" Height="50" Margin="5"></Image>
+            </Button>
+            <Button x:Name="QuestSettings" Background="Transparent" BorderBrush="Transparent" Click="QuestSettings_Click">
+                <Image Source="Settings.png" Height="50" Margin="5"></Image>
+            </Button>
+            <Button x:Name="QuestInfo" Background="Transparent" BorderBrush="Transparent" Click="QuestInfo_Click">
+                <Image Source="Info.jpg" Height="50" Margin="5"></Image>
+            </Button>
+            <Button x:Name="back" Content="Назад" Height="20" Width="80" Click="back_Click"></Button>
+        </StackPanel>
+        <Frame x:Name="MyFrame" Grid.Column="1" NavigationUIVisibility="Hidden" Source="PageQuestEmpty.xaml"></Frame>
+    </Grid>
+</Window>

@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Stas_PR5"
         mc:Ignorable="d"
-        Title="WindowQuest5" Height="450" Width="800">
-    <Grid>
-        
+        Title="WindowQuest5" Height="700" Width="930">
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Content="Настройка сети" Background="Black" Foreground="White" HorizontalAlignment="Left" FontSize="15" Margin="1" Height="30" Width="130"></Button>
+        <Button Content="Настройка МД" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="-65" Background="Black" Foreground="White"  FontSize="15" Height="30" Width="130"></Button>
+        <Rectangle Grid.Row="1" Fill="LightSlateGray"></Rectangle>
+        <Rectangle Grid.Column="2" Grid.Row="1" Fill="LightSlateGray"></Rectangle>
+        <Rectangle Grid.Column="1" Grid.Row="1" Fill="Black"></Rectangle>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="1">
+            <TextBlock Text="Настройка сети" FontSize="15" Foreground="White" FontWeight="Black" Margin="10"></TextBlock>
+            <Button Content="Найти МД" FontSize="15" Width="150" Height="40" Margin="12" Background="Transparent" Foreground="White"></Button>
+            <Button Content="Изменить IP-адрес" FontSize="15" Width="150" Height="40" Margin="12" Background="Transparent" Foreground="White"></Button>
+            <Button Content="Подключить" Width="150" FontSize="15" Height="40" Margin="12" Background="Transparent" Foreground="White"></Button>
+            <Button Content="Сменить СМА Пароль" FontSize="15" Width="150" Height="40" Margin="12" Background="Transparent" Foreground="White"></Button>
+            <Button Content="Изменить Объект и Место" FontSize="15" Width="150" Height="40" Margin="12" Background="Transparent" Foreground="White"></Button>
+            <Button Content="Изменить Дату и Время" FontSize="15" Width="150" Height="40" Margin="12" Background="Transparent" Foreground="White"></Button>
+            <Button Content="Добавить МД" Width="150" FontSize="15" Height="40" Margin="12" Background="Transparent" Foreground="White"></Button>
+            <Button Content="Переместить МД" Width="150" FontSize="15" Height="40" Margin="12" Background="Transparent" Foreground="White"></Button>
+            <Button x:Name="quest5b" Height="20" Width="80" Content="Задание 5 (Б)" Click="quest5b_Click" Margin="5"></Button>
+            <Button x:Name="back" Height="20" Width="80" Content="Назад" Click="back_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1" Margin="0,0,0,579" Orientation="Horizontal">
+            <TextBlock Text="МД в сети" FontSize="15" Foreground="White" FontWeight="Black" Margin="10"></TextBlock>
+            <TextBlock Text="АДРЕС КОМПЬЮТЕРА: 192.168.201.163" Height="50" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="15" Foreground="LightGray"></TextBlock>
+        </StackPanel>
+        <Frame x:Name="MyFrame" Grid.Column="2" Grid.Row="1" Margin="0,75,0,10"></Frame>
     </Grid>
 </Window>

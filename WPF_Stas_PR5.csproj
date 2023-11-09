@@ -70,7 +70,28 @@
     <Compile Include="Case5.xaml.cs">
       <DependentUpon>Case5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataGrid.xaml.cs">
+      <DependentUpon>DataGrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs" />
+    <Compile Include="PageQuest1.xaml.cs">
+      <DependentUpon>PageQuest1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageQuest2.xaml.cs">
+      <DependentUpon>PageQuest2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageQuest3.xaml.cs">
+      <DependentUpon>PageQuest3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageQuest4.xaml.cs">
+      <DependentUpon>PageQuest4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageQuest5.xaml.cs">
+      <DependentUpon>PageQuest5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageQuestEmpty.xaml.cs">
+      <DependentUpon>PageQuestEmpty.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Quest4Home.xaml.cs">
       <DependentUpon>Quest4Home.xaml</DependentUpon>
     </Compile>
@@ -113,6 +134,12 @@
     <Compile Include="WindowQuest5.xaml.cs">
       <DependentUpon>WindowQuest5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowQuest5B.xaml.cs">
+      <DependentUpon>WindowQuest5B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowQuest6.xaml.cs">
+      <DependentUpon>WindowQuest6.xaml</DependentUpon>
+    </Compile>
     <Page Include="Case1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -130,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Case5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,6 +185,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Page3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageQuest1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageQuest2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageQuest3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageQuest4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageQuest5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageQuestEmpty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -213,6 +268,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowQuest5B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowQuest6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Page1.xaml.cs">
@@ -266,6 +329,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Info.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
