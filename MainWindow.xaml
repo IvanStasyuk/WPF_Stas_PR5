@@ -21,5 +21,6 @@
         <Frame Source="Page3.xaml" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.Column="2" BorderBrush="Yellow" Margin="5" BorderThickness="2"></Frame>
         <TextBlock TextWrapping="WrapWithOverflow" Grid.RowSpan="2" Background="Aqua" Margin="5">Это главное окно, а это
             <Hyperlink NavigateUri="Page1.xaml">Ссылка на первую страницу</Hyperlink></TextBlock>
+        <Button x:Name="quest2" Content="Задание 2" Height="20" Width="70" Click="quest2_Click" Grid.Row="2"></Button>
     </Grid>
 </Window>

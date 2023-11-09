@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WPF_Stas_PR5
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для WindowQuest5.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WindowQuest5 : Window
     {
-        public MainWindow()
+        public WindowQuest5()
         {
             InitializeComponent();
-        }
-
-        private void quest2_Click(object sender, RoutedEventArgs e)
-        {
-            WindowQuest2 window1 = new WindowQuest2();
-            window1.Show();
-            this.Close();
         }
     }
 }

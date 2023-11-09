@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPF_Stas_PR5.WindowQuest4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Stas_PR5"
+        mc:Ignorable="d"
+        Title="WindowQuest4" Height="450" Width="800">
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="DarkSlateBlue" Grid.Row="1"></Rectangle>
+        <Rectangle Fill="DarkSlateBlue" Grid.ColumnSpan="2"></Rectangle>
+        <Button Content="C# Ui Academy" FontSize="20" FontWeight="Bold" Grid.Column="1" Height="30" Foreground="White" Background="Transparent" BorderBrush="Transparent"></Button>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.RowSpan="2">
+            <Image Source="LanguageC.jpg" Height="140"></Image>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="House.png" Height="30" Margin="5"></Image>
+                <Button x:Name="Quest4Home" Content="Home" Margin="5" Height="20" Width="70" Foreground="White" Background="Transparent" BorderBrush="Transparent" Click="Quest4Home_Click"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="Letter.png" Height="30" Margin="5"></Image>
+                <Button x:Name="Quest4Inbox" Content="Inbox" Margin="5" Height="20" Width="70" Foreground="White" Background="Transparent" Click="Quest4Inbox_Click" BorderBrush="Transparent" ></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="Telegram.png" Height="30" Margin="5"></Image>
+                <Button x:Name="Quest4SentItems" Content="Sent Items" Margin="5" Height="20" Width="70" Foreground="White" Background="Transparent" Click="Quest4SentItems_Click" BorderBrush="Transparent"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="Danger.jpg" Height="30" Margin="5"></Image>
+                <Button x:Name="Quest4Spam" Content="Spam" Margin="5" Height="20" Width="70" Foreground="White" Background="Transparent" Click="Quest4Spam_Click" BorderBrush="Transparent"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="Settings.png" Height="30" Margin="5"></Image>
+                <Button x:Name="Quest4Settings" Content="Settings" Margin="5" Height="20" Width="70" Foreground="White" Background="Transparent" Click="Quest4Settings_Click" BorderBrush="Transparent"></Button>
+            </StackPanel>
+            <Button x:Name="quest5" Content="Задание 5" Height="20" Width="70" Click="quest5_Click" Margin="5"></Button>
+            <Button x:Name="back" Content="Назад" Height="20" Width="70" Click="back_Click"></Button>
+        </StackPanel>
+        <Frame x:Name="MyFrame" Grid.Column="1" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>

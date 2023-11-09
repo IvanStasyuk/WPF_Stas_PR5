@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace WPF_Stas_PR5
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Step1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Step1 : Page
     {
-        public MainWindow()
+        public Step1()
         {
             InitializeComponent();
-        }
-
-        private void quest2_Click(object sender, RoutedEventArgs e)
-        {
-            WindowQuest2 window1 = new WindowQuest2();
-            window1.Show();
-            this.Close();
         }
     }
 }

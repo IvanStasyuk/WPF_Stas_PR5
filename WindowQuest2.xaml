@@ -20,6 +20,8 @@
             <Button x:Name="Case3" Content="Case 3" Foreground="White" FontWeight="Bold" Width="60" Background="Transparent" BorderBrush="Transparent" Margin="5" Click="Case3_Click"></Button>
             <Button x:Name="Case4" Content="Case 4" Foreground="White" FontWeight="Bold" Width="60" Background="Transparent" BorderBrush="Transparent" Margin="5" Click="Case4_Click"></Button>
             <Button x:Name="Case5" Content="Case 5" Foreground="White" FontWeight="Bold" Width="60" Background="Transparent" BorderBrush="Transparent" Margin="5" Click="Case5_Click"></Button>
+            <Button x:Name="quest3" Content="Задание 3" Height="20" Width="70" Click="quest3_Click"></Button>
+            <Button x:Name="back" Content="Назад" Height="20" Width="70" Click="back_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>

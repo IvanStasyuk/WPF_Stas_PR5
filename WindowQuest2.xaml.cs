@@ -49,5 +49,19 @@ namespace WPF_Stas_PR5
         {
             Manager.MyFrame.Navigate(new Case5());
         }
+
+        private void quest3_Click(object sender, RoutedEventArgs e)
+        {
+            WindowQuest3 window2 = new WindowQuest3();
+            window2.Show();
+            this.Close();
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window0 = new MainWindow();
+            window0.Show();
+            this.Close();
+        }
     }
 }
