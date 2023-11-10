@@ -73,6 +73,9 @@
     <Compile Include="DataGrid.xaml.cs">
       <DependentUpon>DataGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataGridJobs.xaml.cs">
+      <DependentUpon>DataGridJobs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="PageQuest1.xaml.cs">
       <DependentUpon>PageQuest1.xaml</DependentUpon>
@@ -161,6 +164,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataGridJobs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

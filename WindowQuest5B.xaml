@@ -8,10 +8,46 @@
         Title="WindowQuest5B" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button x:Name="quest6" Height="20" Width="80" Content="Задание 6" Click="quest6_Click" Grid.Column="0"></Button>
-        <Button x:Name="back" Height="20" Width="80" Content="Назад" Click="back_Click" Grid.Column="1"></Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="450">
+            <Button Content="Load Ai Logged Jobs" Height="40" Width="110" Margin="5"></Button>
+            <Button Content="Update Selected Job" Height="40" Width="115" Margin="78,0"></Button>
+            <Button Content="Close Selected Job" Height="40" Width="116" Margin="-100"/>
+        </StackPanel>
+        <Frame x:Name="MyFrame" Grid.Row="1" Grid.RowSpan="5" NavigationUIVisibility="Hidden" Source="DataGridJobs.xaml"></Frame>
+        <TextBlock Text="Search Jobs" Height="20" Width="auto" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2"></TextBlock>
+        <TextBox Height="20" Width="155" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="73,2,0,0" Grid.ColumnSpan="2"></TextBox>
+        <TextBlock Text="Data" Height="20" Width="auto" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,22,0,0"></TextBlock>
+        <TextBox Height="20" Width="61" Background="LightGray" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="73,0,0,0" Grid.ColumnSpan="2"></TextBox>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3">
+            <TextBlock Text="Job Id" Margin="10"></TextBlock>
+            <TextBlock Text="User Id" Margin="10"></TextBlock>
+            <TextBlock Text="Issue Subject" Margin="10"></TextBlock>
+            <TextBlock Text="Screen" Margin="10"></TextBlock>
+            <TextBlock Text="Issue Futher Details" Margin="7"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="4">
+            <TextBox Height="20" Width="100" Margin="8,10" HorizontalAlignment="Left" Background="LightGray"></TextBox>
+            <TextBox Height="20" Width="100" Margin="8,3" HorizontalAlignment="Left" Background="LightGray"></TextBox>
+            <TextBox Height="20" Width="200" Margin="8,15"></TextBox>
+            <TextBox Height="20" Width="200" Margin="8,3"></TextBox>
+            <TextBox Height="120" Width="200" Margin="8,10"></TextBox>
+        </StackPanel>
+        <Button Content="Log Job" Height="20" Width="60" Grid.Column="2" Grid.Row="4" Grid.RowSpan="2" Grid.ColumnSpan="1"/>
+        <Button Content="Cancel" Height="20" Width="60" Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
+        <Button x:Name="quest6" Content="Задание 6" Height="20" Width="60" Grid.Column="1" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="1" Click="quest6_Click"/>
+        <Button x:Name="back" Content="Назад" Height="20" Width="60" Grid.Column="1" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="3" Click="back_Click"/>
     </Grid>
 </Window>

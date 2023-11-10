@@ -22,6 +22,8 @@ namespace WPF_Stas_PR5
         public WindowQuest5B()
         {
             InitializeComponent();
+            Manager.MyFrame = MyFrame;
+            Manager.MyFrame.Navigate(new DataGridJobs());
         }
 
         private void quest6_Click(object sender, RoutedEventArgs e)
